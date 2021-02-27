@@ -1,0 +1,162 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<html>
+    <head>
+        <title>Junior Rugby League Signup Form</title>
+    </head>
+    <body>
+        <h1 id="title">Junior Rugby League Form</h1>
+        <!-- <img src="==put image here=="> -->
+        <p id="description">Please complete the form below. Fields marked with an <span class="brackets">(*)</span> asterisk are mandatory fields and are required to be completed.</p>
+        <form id="survey-form" action="contact-us.html" method="POST">
+            <p>
+               <label id="name-label" for="name">Name:</label>
+               <input
+                      type="text"
+                      id="name"
+                      name="user_name"
+                      class="form-control"
+                      placeholder="Please enter your name"
+                  required
+                />
+            </p>
+            <p>Gender:
+              <label>
+                <input
+                  name="gender"
+                  value="male"
+                  type="radio"
+                  class="input-radio"
+                />Male</label>
+              <label>
+                <input
+                  name="gender"
+                  value="female"
+                  type="radio"
+                  class="input-radio"
+                />Female</label>
+            </p>
+            <p>
+               <label id="email-label" for="mail">Email Address:</label>
+               <input
+                      type="email"
+                      id="email"
+                      name="user_mail"
+                      class="form-control"
+                      placeholder="Please enter the email address correctly"
+                      required
+                 />
+            </p>
+            <p>
+               <label id="number-label" for="age">Age:</label>
+               <input
+                      type="number"
+                      id="number"
+                      name="user_age"
+                      min="5"
+                      max="18"
+                      class="form-control"
+                      placeholder="Please enter a number between 5-18 if providing"
+                      required
+                 />
+            </p>
+          <!-- Dropdown -->
+          <p>Which age group are you looking to join?</p>
+            <select id="dropdown" name="age-group" class="form-control" required>
+            <option disabled selected value>Select age group</option>
+            <option value="u7">Under 7s</option>
+            <option value="u8">Under 8s</option>
+            <option value="u9">Under 9s</option>
+            <option value="u10">Under 10s</option>
+            <option value="u11">Under 11s</option>
+            <option value="u12">Under 12s</option>
+            <option value="u13">Under 13s</option>
+            <option value="u14">Under 14s</option>
+            <option value="u15">Under 15s</option>
+            <option value="u16">Under 16s</option>
+            <option value="u18">Under 18s</option>
+      </select>
+          <p>Which sessions of the week can you play?
+          <span class="brackets">(Check all that apply)</span>
+          </p>
+      <!-- Checkboxes -->
+      <label>
+        <input
+          name="prefer"
+          value="monday-eve"
+          type="checkbox"
+          class="input-checkbox"
+          />Monday evenings</label>
+      <label>
+        <input
+          name="prefer"
+          value="tuesday-eve"
+          type="checkbox"
+          class="input-checkbox"
+          />Tuesday evenings</label>
+      <label><input
+          name="prefer"
+          value="wednesday-eve"
+          type="checkbox"
+          class="input-checkbox"
+          />Wednesday evenings</label>
+      <label><input
+          name="prefer"
+          value="thursday-eve"
+          type="checkbox"
+          class="input-checkbox"
+          />Thursday evenings</label>
+      <label><input
+          name="prefer"
+          value="friday-eve"
+          type="checkbox"
+          class="input-checkbox"
+          />Friday evenings</label>
+      <label><input
+          name="prefer"
+          value="saturday-am"
+          type="checkbox"
+          class="input-checkbox"
+          />Saturday mornings</label>
+      <label><input
+          name="prefer"
+          value="saturday-pm"
+          type="checkbox"
+          class="input-checkbox"
+          />Saturday afternoons</label>
+      <label><input
+          name="prefer"
+          value="sunday-am"
+          type="checkbox"
+          class="input-checkbox"
+          />Sunday mornings</label>
+      <label><input
+          name="prefer"
+          value="sunday-pm"
+          type="checkbox"
+          class="input-checkbox"
+          />Sunday afternoons
+       </label>
+       <p>Please provide medical conditions for your son or daugter:</p>
+          <textarea
+            id="medical"
+            class="input-textarea"
+            name="medical"
+            placeholder="Enter medical conditions here..."></textarea>
+            </p>
+         <p>Thank you for completing the form, please press submit below.</p>
+            <p class="submit-button">
+              <button type="submit" id="submit" class="submit-button">Submit</button>
+         </p>
+        </form>
+    </body>
+</html>
